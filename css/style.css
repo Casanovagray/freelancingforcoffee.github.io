@@ -882,6 +882,38 @@ main { padding-top: var(--nav-h); }
 .site-footer .foot-brand img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; }
 .site-footer p { margin: 0; font-family: var(--font-mono); font-size: 12px; color: var(--text-faint); }
 
+/* ===================== Entrance animations ===================== */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-26px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.anim-fade-left, .anim-fade-up, .anim-fade-in {
+  opacity: 0;
+  animation-duration: 0.7s;
+  animation-timing-function: var(--ease);
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--i, 0) * 90ms);
+}
+.anim-fade-left { animation-name: fadeInLeft; }
+.anim-fade-up { animation-name: fadeInUp; }
+.anim-fade-in { animation-name: fadeIn; animation-duration: 0.9s; }
+
+/* Scroll-triggered reveal — JS toggles .in-view when the element enters the viewport */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+.reveal-on-scroll.in-view { opacity: 1; transform: none; }
+
 /* ===================== Focus & motion ===================== */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
   outline: 2px solid var(--cyan);
@@ -889,6 +921,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+  .anim-fade-left, .anim-fade-up, .anim-fade-in { opacity: 1 !important; transform: none !important; }
 }
 
 /* ===================== Responsive ===================== */

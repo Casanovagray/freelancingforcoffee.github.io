@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-index">
 <div class="ambient-glow"></div>
 
 <!-- ===== Nav ===== -->
@@ -18,7 +18,7 @@
   <div class="container">
     <a href="index.html" class="brand">
       <img class="brand-mark" src="media/logo.png" alt="Freelancing for coffee logo">
-      Freelancing for <span class="dim">coffee</span>
+      Freelancing for Coffee
     </a>
     <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
       <span class="bars"><span></span><span></span><span></span></span>
@@ -42,23 +42,23 @@
   <section class="hero">
     <div class="container">
       <div class="hero-copy">
-        <span class="eyebrow">Photography · Journalism · Editing</span>
-        <h1 class="hero-title">Freelancing fueled with caffeine.</h1>
-        <p class="lede">
+        <span class="eyebrow anim-fade-left" style="--i:0">Photography · Journalism · Editing</span>
+        <h1 class="anim-fade-left" style="--i:1">Freelancing <span class="gradient-text">for coffee.</span></h1>
+        <p class="lede anim-fade-left" style="--i:2">
           <!-- EDIT ME: replace with your own intro copy -->
           I'm a freelance visual storyteller — part photographer, part journalist,
           part editor — and I run entirely on curiosity and cold brew. This is where
           I keep the work I'm proud of, and where you can find out what it costs to
           put me on your next story.
         </p>
-        <div class="cta-row">
+        <div class="cta-row anim-fade-left" style="--i:3">
           <a href="photography.html" class="btn btn-primary">Photography</a>
           <a href="journalism.html" class="btn btn-primary">Journalism</a>
           <a href="editing.html" class="btn btn-primary">Video editing</a>
         </div>
       </div>
 
-      <div class="photo-frame">
+      <div class="photo-frame anim-fade-in" style="--i:2">
         <div class="ring-mark purple r1"></div>
         <div class="ring-mark cyan r2"></div>
         <!-- EDIT ME: swap the src if you want to use a different photo -->
@@ -67,7 +67,7 @@
     </div>
   </section>
 
-  <section class="brands-section">
+  <section class="brands-section reveal-on-scroll">
     <div class="container">
       <span class="eyebrow">Trusted by</span>
       <h2>Brands I've worked with</h2>

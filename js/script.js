@@ -7,7 +7,41 @@ document.addEventListener("DOMContentLoaded", () => {
   setActiveLink();
   initPhotographyCarousel();
   initJournalism();
+  initStaggerAnimations();
+  initScrollReveal();
 });
+
+/* ---------------- Entrance animations ---------------- */
+function initStaggerAnimations() {
+  /* Sets --i on each staggered group so CSS's animation-delay: calc(var(--i) * 90ms)
+     fans the entrance animation out across the items, regardless of how many there are. */
+  document.querySelectorAll(".photo-grid").forEach((grid) => {
+    grid.querySelectorAll(".anim-fade-up").forEach((el, i) => el.style.setProperty("--i", i));
+  });
+}
+
+function initScrollReveal() {
+  const targets = document.querySelectorAll(".reveal-on-scroll");
+  if (!targets.length) return;
+
+  if (!("IntersectionObserver" in window)) {
+    targets.forEach((el) => el.classList.add("in-view"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  targets.forEach((el) => observer.observe(el));
+}
 
 /* ---------------- Nav drawer ---------------- */
 function initNavDrawer() {

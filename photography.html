@@ -10,14 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="page-photography">
 <div class="ambient-glow"></div>
 
 <nav class="site-nav">
   <div class="container">
     <a href="index.html" class="brand">
       <img class="brand-mark" src="media/logo.png" alt="Freelancing for coffee logo">
-      Freelancing for <span class="dim">coffee</span>
+      Freelancing for Coffee
     </a>
     <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
       <span class="bars"><span></span><span></span><span></span></span>
@@ -40,9 +40,9 @@
 <main>
   <section class="page-head">
     <div class="container">
-      <span class="eyebrow">Selected work</span>
-      <h1>Photography</h1>
-      <p><!-- EDIT ME --> A set of albums organised by category. Click any thumbnail to open the carousel for that album.</p>
+      <span class="eyebrow anim-fade-left" style="--i:0">Selected work</span>
+      <h1 class="anim-fade-left" style="--i:1">Photography</h1>
+      <p class="anim-fade-left" style="--i:2"><!-- EDIT ME --> A set of albums organised by category. Click any thumbnail to open the carousel for that album.</p>
     </div>
   </section>
 
@@ -57,41 +57,41 @@
     -->
     <div class="photo-grid">
       <!-- EDIT ME: add more real photos by extending data-images (comma-separated, no spaces needed) -->
-      <article class="album-card" data-album="Matsuri 2026"
+      <article class="album-card anim-fade-up" data-album="Matsuri 2026"
                 data-images="media/photography/matsuri/1.png,media/photography/matsuri/2.png,media/photography/matsuri/3.png,media/photography/matsuri/4.png">
         <img class="thumb-img" src="media/photography/matsuri/thumbnail.png" alt="Matsuri 2026 thumbnail">
         <div class="info"><h3>Matsuri 2026</h3><span>4 photos</span></div>
       </article>
 
-      <article class="album-card" data-album="Portraits" data-count="6">
+      <article class="album-card anim-fade-up" data-album="Portraits" data-count="6">
         <div class="ph ph-2"><div class="tint"></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
         </div>
         <div class="info"><h3>Portraits</h3><span>6 photos</span></div>
       </article>
 
-      <article class="album-card" data-album="Landscape" data-count="10">
+      <article class="album-card anim-fade-up" data-album="Landscape" data-count="10">
         <div class="ph ph-3"><div class="tint"></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
         </div>
         <div class="info"><h3>Landscape</h3><span>10 photos</span></div>
       </article>
 
-      <article class="album-card" data-album="Events" data-count="7">
+      <article class="album-card anim-fade-up" data-album="Events" data-count="7">
         <div class="ph ph-4"><div class="tint"></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
         </div>
         <div class="info"><h3>Events</h3><span>7 photos</span></div>
       </article>
 
-      <article class="album-card" data-album="Product" data-count="5">
+      <article class="album-card anim-fade-up" data-album="Product" data-count="5">
         <div class="ph ph-5"><div class="tint"></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
         </div>
         <div class="info"><h3>Product</h3><span>5 photos</span></div>
       </article>
 
-      <article class="album-card" data-album="Black &amp; White" data-count="6">
+      <article class="album-card anim-fade-up" data-album="Black &amp; White" data-count="6">
         <div class="ph ph-6"><div class="tint"></div>
           <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
         </div>
