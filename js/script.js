@@ -175,6 +175,7 @@ function initJournalism() {
         <p>Yet one crucial ingredient is missing: he never actually leaves his own world. So does Solo Leveling qualify as an isekai, or has everyone been using the label a little too loosely?</p>
 
         <h3>What actually defines an isekai anime?</h3>
+        <figure><img src="media/journalism/solo-leveling/body-2.jpg" alt="Isekai anime still" loading="lazy"><figcaption>Credit: A-1 Pictures, Chugong</figcaption></figure>
         <p>At its core, isekai (Japanese for “different world”) refers to a story where the protagonist is transported from their original world into another one.</p>
         <p>That can happen through reincarnation after death, summoning, magical portals, or even being trapped inside a video game. Most isekai series also share several familiar traits:</p>
         <ul>
@@ -183,28 +184,34 @@ function initJournalism() {
           <li>An unfamiliar world the protagonist must learn to survive in</li>
           <li>In many modern series, the protagonist dies before reincarnating with extraordinary abilities</li>
         </ul>
+        <figure><img src="media/journalism/solo-leveling/body-3.jpg" alt="Isekai anime still" loading="lazy"><figcaption>Credit: A-1 Pictures / Aniplex</figcaption></figure>
         <p>While these tropes have become synonymous with isekai, the journey to another world is still the defining requirement.</p>
 
         <h3>Is Solo Leveling an isekai anime?</h3>
         <p>The short answer is no — at least not by the traditional definition of isekai.</p>
         <p>Solo Leveling borrows heavily from the genre, from RPG mechanics and leveling systems to overpowered abilities and dungeon crawling. That's why many viewers assume Solo Leveling is an isekai anime after watching only a few episodes.</p>
+        <figure><img src="media/journalism/solo-leveling/body-4.jpg" alt="Solo Leveling still" loading="lazy"><figcaption>Credit: A-1 Pictures, Chugong</figcaption></figure>
         <p>However, one defining feature of isekai is missing: Sung Jinwoo never leaves his own world. Instead, supernatural Gates appear in modern-day Korea, allowing monsters and dungeons to invade reality rather than transporting Jinwoo somewhere else.</p>
         <p>Because of that, Solo Leveling is better described as an isekai-adjacent fantasy or a hunter fantasy rather than a true isekai anime.</p>
 
         <h3>So why do fans still call Solo Leveling an isekai?</h3>
         <p>This is where things get genuinely, deeply, unnecessarily heated.</p>
+        <figure><img src="media/journalism/solo-leveling/body-5.jpg" alt="Solo Leveling still" loading="lazy"><figcaption>Credit: A-1 Pictures, Chugong</figcaption></figure>
         <p>Solo Leveling checks almost every other box. Jinwoo receives a floating status window, completes quests, levels up his stats, unlocks new skills, and grows stronger through a game-like progression system. For many viewers, that's enough to consider Solo Leveling an isekai anime, even if the story technically never leaves Earth.</p>
         <p>Not everyone agrees.</p>
         <p>This question has sparked years of online arguments. A lengthy MyAnimeList thread titled “Solo Leveling is an Isekai well done/written” spans pages of fans debating the definition.</p>
         <p>Some point to YouTuber Gigguk's description of the series as “isekai in disguise.” Others argue it's actually a reverse isekai because the monsters invade Jinwoo's world instead.</p>
+        <figure><img src="media/journalism/solo-leveling/body-6.jpg" alt="Solo Leveling still" loading="lazy"><figcaption>Credit: A-1 Pictures, Chugong</figcaption></figure>
         <p>Part of the confusion also comes from the series' origins. Many newcomers even ask, “Is Solo Leveling a Korean anime?” The answer is also no — not exactly.</p>
         <p>Solo Leveling began as a South Korean web novel by Chugong before being adapted into a webtoon by the late Jang Sung-rak (DUBU) through Redice Studio. The anime adaptation, however, is produced in Japan, which is why it retains the anime label despite adapting a Korean IP.</p>
         <p>Likewise, if you're wondering which studio animated Solo Leveling, it was A-1 Pictures, the Japanese studio behind Sword Art Online, Kaguya-sama: Love Is War, and Blue Exorcist. Directed by Shunsuke Nakashige, the adaptation preserves the Korean setting and characters while bringing them to life through Japanese animation.</p>
+        <figure><img src="media/journalism/solo-leveling/body-7.jpg" alt="Solo Leveling still" loading="lazy"><figcaption>Credit: A-1 Pictures, Chugong</figcaption></figure>
         <p>Understanding the production history actually reinforces why the genre debate exists. Although Solo Leveling is rooted in Korean storytelling and modern Seoul, it borrows heavily from Japanese light novel and isekai conventions, making it easy to see why many fans instinctively group it with the genre.</p>
         <p>By the strict genre definition, though, Solo Leveling does not qualify as an isekai anime. Jinwoo continues living in Seoul with his family, and the Gates exist as anomalies within his own world rather than transporting him elsewhere.</p>
         <p>That places Solo Leveling closer to portal fantasy or the broader hunter genre. It shares much of isekai's DNA without crossing the genre's defining line.</p>
 
         <h3>Final verdict</h3>
+        <figure><img src="media/journalism/solo-leveling/body-8.jpg" alt="Solo Leveling still" loading="lazy"><figcaption>Credit: A-1 Pictures, Chugong</figcaption></figure>
         <p>So, is Solo Leveling an isekai anime? It depends on how strictly you define the genre.</p>
         <p>Casual viewers will probably continue calling it an isekai because of its leveling system, quests, and RPG mechanics. Genre purists, however, point to one missing ingredient: Sung Jinwoo never leaves his own world.</p>
         <p>That's why Solo Leveling occupies a unique middle ground — close enough to isekai to spark endless debates, but different enough to stand as its own kind of fantasy.</p>
