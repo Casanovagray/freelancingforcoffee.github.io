@@ -160,7 +160,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 17px;
   letter-spacing: -0.01em;
 }
-.brand-mark { width: 34px; height: 34px; flex-shrink: 0; }
+.brand-mark { width: 34px; height: 34px; flex-shrink: 0; border-radius: 50%; object-fit: cover; }
 .brand-mark .r1 { stroke: var(--purple); }
 .brand-mark .r2 { stroke: var(--cyan); }
 .brand span.dim { color: var(--text-faint); font-weight: 500; }
@@ -317,7 +317,7 @@ main { padding-top: var(--nav-h); }
   position: relative;
   aspect-ratio: 4 / 5;
   border-radius: var(--radius-lg);
-  border: 1.5px dashed var(--border-strong);
+  border: 1px solid var(--border-strong);
   background: var(--surface);
   display: flex;
   align-items: center;
@@ -330,6 +330,13 @@ main { padding-top: var(--nav-h); }
   inset: -20%;
   background: radial-gradient(circle at 30% 20%, rgba(155,107,255,0.20), transparent 55%),
               radial-gradient(circle at 75% 80%, rgba(53,230,224,0.16), transparent 55%);
+}
+.photo-frame img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .photo-frame .placeholder-msg {
   position: relative;
@@ -345,6 +352,31 @@ main { padding-top: var(--nav-h); }
 }
 .photo-frame .r1 { top: -40px; right: -50px; width: 200px; height: 200px; }
 .photo-frame .r2 { bottom: -60px; left: -40px; width: 160px; height: 160px; }
+
+/* ===================== Brands strip (home) ===================== */
+.brands-section {
+  padding: 30px 0 100px;
+  border-top: 1px solid var(--border);
+  margin-top: 40px;
+}
+.brands-section .eyebrow { display: block; margin-bottom: 8px; }
+.brands-section h2 { font-size: clamp(24px, 3.4vw, 34px); margin-bottom: 26px; }
+.brands-placeholder {
+  aspect-ratio: 21 / 6;
+  max-height: 220px;
+  border-radius: var(--radius);
+  border: 1.5px dashed var(--border-strong);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.brands-placeholder img { width: 100%; height: 100%; object-fit: contain; padding: 24px; }
+.brands-placeholder .placeholder-msg { position: relative; text-align: center; padding: 24px; }
+.brands-placeholder .placeholder-msg svg { width: 36px; height: 36px; margin: 0 auto 12px; opacity: 0.7; }
+.brands-placeholder .placeholder-msg p { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-faint); margin: 0; }
 
 /* ===================== Section shell ===================== */
 .page-head {
@@ -377,6 +409,7 @@ main { padding-top: var(--nav-h); }
 }
 .album-card .ph svg { width: 34px; height: 34px; opacity: 0.55; }
 .album-card .tint { position: absolute; inset: 0; opacity: 0.85; }
+.album-card .thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .ph-1 .tint { background: linear-gradient(135deg, #6d3bd6, #1b1b28); }
 .ph-2 .tint { background: linear-gradient(135deg, #17a8a8, #1b1b28); }
 .ph-3 .tint { background: linear-gradient(135deg, #9b6bff, #17a8a8); }
@@ -448,8 +481,16 @@ main { padding-top: var(--nav-h); }
   position: absolute; bottom: 16px; left: 18px;
   font-family: var(--font-mono); font-size: 12.5px;
   color: rgba(236,233,246,0.75);
+  z-index: 2;
 }
 .carousel-slide svg { width: 40px; height: 40px; opacity: 0.5; }
+.carousel-slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.carousel-slide::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(6,6,10,0.75), transparent 40%);
+  pointer-events: none;
+}
 
 .carousel-arrow {
   position: absolute; top: 50%; transform: translateY(-50%);
@@ -502,6 +543,7 @@ main { padding-top: var(--nav-h); }
 }
 .featured-visual .ph { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
 .featured-visual .ph svg { width: 46px; height: 46px; opacity: 0.5; }
+.featured-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .featured-visual::after {
   content: "";
   position: absolute; inset: 0;
@@ -559,6 +601,7 @@ main { padding-top: var(--nav-h); }
   position: relative; overflow: hidden;
 }
 .article-row .thumb .tint { position: absolute; inset: 0; }
+.article-row .thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .article-row .info h5 { font-size: 14.5px; margin: 0 0 4px; font-family: var(--font-display); font-weight: 600; }
 .article-row .info span { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-faint); }
 
@@ -578,11 +621,20 @@ main { padding-top: var(--nav-h); }
   overflow: hidden;
 }
 .article-modal .article-hero .tint { position: absolute; inset: 0; }
+.article-modal .article-hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.article-modal .article-hero .credit {
+  position: absolute; bottom: 10px; right: 14px;
+  font-family: var(--font-mono); font-size: 11px; color: rgba(236,233,246,0.7);
+}
 .article-modal .article-content { padding: 30px 40px 0; }
 .article-modal .article-content .tag { font-family: var(--font-mono); font-size: 12px; color: var(--cyan); text-transform: uppercase; letter-spacing: 0.08em; }
 .article-modal .article-content h2 { margin-top: 10px; }
+.article-modal .article-content .byline { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-faint); display: block; }
 .article-modal .article-content .date { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-faint); margin-bottom: 24px; display: block; }
 .article-modal .article-content p { color: var(--text-dim); }
+.article-modal .article-content h3 { font-size: 19px; margin-top: 30px; }
+.article-modal .article-content ul { margin: 0 0 18px; padding-left: 20px; color: var(--text-dim); }
+.article-modal .article-content li { margin-bottom: 8px; }
 
 /* ===================== Editing page ===================== */
 .video-block {
@@ -733,7 +785,7 @@ main { padding-top: var(--nav-h); }
 }
 .site-footer .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
 .site-footer .foot-brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 600; }
-.site-footer .foot-brand svg { width: 24px; height: 24px; }
+.site-footer .foot-brand img { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; }
 .site-footer p { margin: 0; font-family: var(--font-mono); font-size: 12px; color: var(--text-faint); }
 
 /* ===================== Focus & motion ===================== */

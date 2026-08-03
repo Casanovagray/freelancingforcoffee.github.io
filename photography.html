@@ -16,10 +16,7 @@
 <nav class="site-nav">
   <div class="container">
     <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle class="r1" cx="16" cy="18" r="11" stroke-width="2"/>
-        <circle class="r2" cx="24" cy="22" r="9" stroke-width="2"/>
-      </svg>
+      <img class="brand-mark" src="media/logo.png" alt="Freelancing for coffee logo">
       Freelancing for <span class="dim">coffee</span>
     </a>
     <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
@@ -59,11 +56,11 @@
       and update js/script.js's openAlbum() to read real image URLs from a data attribute.
     -->
     <div class="photo-grid">
-      <article class="album-card" data-album="Street" data-count="8">
-        <div class="ph ph-1"><div class="tint"></div>
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
-        </div>
-        <div class="info"><h3>Street</h3><span>8 photos</span></div>
+      <!-- EDIT ME: add more real photos by extending data-images (comma-separated, no spaces needed) -->
+      <article class="album-card" data-album="Matsuri 2026"
+                data-images="media/photography/matsuri/1.png,media/photography/matsuri/2.png,media/photography/matsuri/3.png,media/photography/matsuri/4.png">
+        <img class="thumb-img" src="media/photography/matsuri/thumbnail.png" alt="Matsuri 2026 thumbnail">
+        <div class="info"><h3>Matsuri 2026</h3><span>4 photos</span></div>
       </article>
 
       <article class="album-card" data-album="Portraits" data-count="6">
@@ -124,10 +121,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="foot-brand">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="18" r="11" stroke="var(--purple)" stroke-width="2"/>
-        <circle cx="24" cy="22" r="9" stroke="var(--cyan)" stroke-width="2"/>
-      </svg>
+      <img src="media/logo.png" alt="Freelancing for coffee logo">
       Freelancing for coffee
     </div>
     <p>&copy; 2026 Freelancing for coffee. All rights reserved.</p>

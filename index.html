@@ -17,10 +17,7 @@
 <nav class="site-nav">
   <div class="container">
     <a href="index.html" class="brand">
-      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle class="r1" cx="16" cy="18" r="11" stroke-width="2"/>
-        <circle class="r2" cx="24" cy="22" r="9" stroke-width="2"/>
-      </svg>
+      <img class="brand-mark" src="media/logo.png" alt="Freelancing for coffee logo">
       Freelancing for <span class="dim">coffee</span>
     </a>
     <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
@@ -60,21 +57,34 @@
           <span>Video editing</span>
         </div>
         <div class="cta-row">
-          <a href="photography.html" class="btn btn-primary">View the work</a>
-          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+          <a href="photography.html" class="btn btn-primary">Photography</a>
+          <a href="journalism.html" class="btn btn-ghost">Journalism</a>
+          <a href="editing.html" class="btn btn-ghost">Video editing</a>
         </div>
       </div>
 
       <div class="photo-frame">
         <div class="ring-mark purple r1"></div>
         <div class="ring-mark cyan r2"></div>
+        <!-- EDIT ME: swap the src if you want to use a different photo -->
+        <img src="media/about/aboutme.png" alt="Portrait of the freelancer behind Freelancing for coffee">
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="container">
+      <span class="eyebrow">Trusted by</span>
+      <h2>Brands I've worked with</h2>
+      <!--
+        EDIT ME: once you have a logos image, uncomment the <img> line below and
+        delete (or keep as a fallback) the .placeholder-msg block.
+        <img src="media/brands/logos.png" alt="Logos of brands I've worked with">
+      -->
+      <div class="brands-placeholder">
         <div class="placeholder-msg">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
-            <circle cx="12" cy="8" r="4"/>
-            <path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
-          </svg>
-          <p><!-- EDIT ME: swap this block for &lt;img src="your-photo.jpg" alt="Your name"&gt; -->
-            Add your photo here<br>(replace .photo-frame content in index.html)</p>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l5-5 4 4 5-6 4 5"/></svg>
+          <p>Add a brands/logos PNG here<br>(media/brands/logos.png)</p>
         </div>
       </div>
     </div>
@@ -84,10 +94,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="foot-brand">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="16" cy="18" r="11" stroke="var(--purple)" stroke-width="2"/>
-        <circle cx="24" cy="22" r="9" stroke="var(--cyan)" stroke-width="2"/>
-      </svg>
+      <img src="media/logo.png" alt="Freelancing for coffee logo">
       Freelancing for coffee
     </div>
     <p>&copy; 2026 Freelancing for coffee. All rights reserved.</p>
