@@ -163,8 +163,7 @@ function initJournalism() {
       id: 0,
       tag: "Anime",
       title: "Is Solo Leveling an Isekai anime? Why fans can’t agree",
-      excerpt:
-        "Sung Jinwoo levels up like a video game character and fights his way through dungeons — so why do genre purists say it doesn’t count as isekai?",
+      dek: "Why does everyone call this isekai?",
       date: "Jul 23, 2026",
       byline: "By Ray Daniel Giron · Published on Fanstanza.gg",
       image: "media/journalism/solo-leveling/hero.jpg",
@@ -219,51 +218,210 @@ function initJournalism() {
     },
     {
       id: 1,
-      tag: "Esports",
-      title: "Inside the grassroots scene rebuilding local competitive gaming",
-      excerpt: "A look at the organisers, venues and players keeping community tournaments alive.",
-      date: "Jul 12, 2026",
-      tint: "ph-1",
-      content:
-        "<p>Replace this paragraph with your real article text. Write two or three paragraphs covering the story, quotes from sources, and any context readers need. Keep paragraphs short for readability on mobile.</p>",
+      tag: "Gaming",
+      title: "Book a date with your very own life-size Gardevoir plush for Valentine's Day",
+      dek: "Hear me out.",
+      date: "Feb 3, 2025",
+      byline: "By Ray Daniel Giron · Published on Oneesports.gg",
+      image: "media/journalism/gardevoir/1.jpg",
+      credit: "Credit: Pokemon Center Japan",
+      content: `
+        <p>Cuddle up with a life-size Gardevoir plush! Pokemon Center Japan is releasing this adorable plush just in time for Valentine's Day, the perfect gift for any Pokemon lover.</p>
+        <p>Gardevoir is a Psychic/Fairy type Pokemon known for its “beauty” and humanoid figure.</p>
+        <p>This Pokemon has undoubtedly inspired countless fan art and memes and is now being immortalized as an actual Pokemon plushie.</p>
+        <p>While the height might be accurate for an in-game XXS Gardevoir, this collectible is a conversation starter that's bound to spark even more memes across the internet.</p>
+
+        <h3>Life-size Gardevoir plush release date and price</h3>
+        <figure><img src="media/journalism/gardevoir/2.jpg" alt="Gardevoir plush screenshot" loading="lazy"><figcaption>Screenshot by Ray Daniel Giron/ONE Esports</figcaption></figure>
+        <p>The Gardevoir plush will be available for purchase exclusively at Japanese Pokémon Centers beginning February 6, 2025, priced at ¥49,500 (approximately US$320).</p>
+        <p>Although this plush cannot stand on its own, it impressively measures at 160 cm tall, the same size as a XXS or XS Gardevoir in-game.</p>
+        <p>Although there are currently no plans for an international release (yet), dedicated collectors outside Japan are already scouring the internet to get their hands on one.</p>
+        <p>Whether it's destined to be the perfect Valentine's Day gift or a comforting companion on lonely nights, the scarcity of this plush has only fueled its desirability.</p>
+        <p>This life-size Gardevoir will certainly be one of the unexpected highlights of 2025. After all, who needs a partner when you have a life-size Gardevoir to keep you company and remind you that sometimes, the best love is self-love?</p>
+      `,
     },
     {
       id: 2,
-      tag: "Feature",
-      title: "What it takes to freelance full-time in a small city",
-      excerpt: "Notes from a year of chasing bylines, invoices, and reliable wifi.",
-      date: "Jun 28, 2026",
-      tint: "ph-2",
-      content:
-        "<p>Replace this paragraph with your real article text. This is placeholder body copy — swap it out for the actual reporting, interviews, and analysis for this piece.</p>",
+      tag: "Reviews",
+      title: "Amnesia: The Bunker Review – Forget Me Not",
+      dek: "At least I felt safer with my gun knowing there's a monster under the bed.",
+      date: "Jun 6, 2023",
+      byline: "By Ray Daniel Giron · Published on Twinfinite.net",
+      image: "media/journalism/amnesia-bunker/1.png",
+      credit: "Screenshot by Ray Daniel Giron",
+      content: `
+        <p>As I immersed myself in the realistic horrors of World War I while playing Amnesia: The Bunker for review. The dread, the fear of the unknown, and curiosity made me finish the game, making me want to try the most challenging difficulty even more.</p>
+        <p>As an avid fan of horror games, especially one who's also a longtime Amnesia fan, the game takes a unique approach as you embody a French soldier who found his way into a bunker filled with mysteries of the unknown. After getting my hands on the game, my caffeine-induced anxiety made me stay on guard while I uncovered the secrets of the mysterious Bunker.</p>
+        <p>The Amnesia franchise made its comeback after three years, and this may be one of the best single-player horror games to date.</p>
+        <figure><img src="media/journalism/amnesia-bunker/2.png" alt="Amnesia: The Bunker screenshot" loading="lazy"><figcaption>Image Source: Frictional Games via Twinfinite</figcaption></figure>
+        <p>The game takes place during World War 1. You play as a French soldier who finds himself in an abandoned bunker's infirmary. Like the previous games, your character yet again suffers from amnesia with little memory of what happened in the earlier events of the conflict. As your character gathers resources within the bunker, he gradually uncovers the secrets hidden within. These include unsettling and inhumane experiments, corpses, and a lurking monster that becomes drawn to any noise. You'll learn more about the game's lore from the diary entries scattered across the map.</p>
+        <p>The gameplay feels similar to the previous games, but this time the game gives you a gun at the beginning of your gameplay. Yes, a weapon. At first blush, this might lull you into thinking, “Great, I feel safer now.” Wrong! From the moment the monster that lurks within that bunker appears throughout the game, you'll never be able to shake off that sense of dread.</p>
+        <p>The game will make you feel at ease, giving you the proper exploration tools, as — I kid you not — it also gives you a rechargeable light source, but it makes a lot of noise when you charge it and attracts the monster.</p>
+        <figure><img src="media/journalism/amnesia-bunker/3.png" alt="Amnesia: The Bunker screenshot" loading="lazy"><figcaption>Image Source: Frictional Games via Twinfinite</figcaption></figure>
+        <p>If you're new to the Amnesia franchise, don't worry because the story isn't connected to the previous games. The Bunker presents players with a linear story giving you clues on how to progress further within the game. Amnesia: The Bunker does not have an auto-save feature. Instead, players have access to a save room where they can manually save their progress by interacting with the save lamp. Just ensure you save often, as you will otherwise lose your progress if you die.</p>
+        <p>In the game, players will encounter puzzles that incorporate an element of randomness. Multiple game elements, such as 4-digit codes, resources, and traps, are randomized with every playthrough. This feature adds an exciting and unpredictable aspect to the gameplay. The game map includes two “key items,” the lighter and the gas mask. While these items are unnecessary to complete the game, they offer players new approaches to overcoming obstacles. The codes to unlock the lockers containing these items remain fixed in the same location during the first playthrough. However, these codes will be found near a random corpse for subsequent playthroughs.</p>
+        <figure><img src="media/journalism/amnesia-bunker/4.png" alt="Amnesia: The Bunker screenshot" loading="lazy"><figcaption>Image Source: Frictional Games via Twinfinite</figcaption></figure>
+        <p>Finally, let's talk about the graphics. The game's overall visuals and the map's design, including its unnerving atmosphere, gives the creeps and chills. The added eerie background sound while navigating into the possible dangers of jumpscares gives you unsettling encounters during the game.</p>
+        <p>Amnesia: The Bunker felt like it was somehow different from its predecessors. The puzzle-heavy horror game and a hint of resource management give the anxiety of suddenly plunging into danger. I felt like the franchise made a different approach but at the end of the day it's worth the adventure.</p>
+
+        <div class="review-score">
+          <div class="score-badge">4/5</div>
+          <div class="review-score-body">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <h4>Amnesia: The Bunker Review</h4>
+            <p>Amnesia: The Bunker felt like it was somehow different from its predecessors. The puzzle-heavy horror game and a hint of resource management give the anxiety of suddenly plunging into danger. I felt like the franchise made a different approach but in the end of the day it's worth the adventure.</p>
+          </div>
+        </div>
+
+        <div class="pros-cons">
+          <div class="col pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Anxiety inducing horror atmosphere.</li>
+              <li>Resource management.</li>
+              <li>Randomized puzzles.</li>
+              <li>Rechargeable flashlight.</li>
+            </ul>
+          </div>
+          <div class="col cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>No autosave feature</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="disclosure">A copy of this game was provided by the publisher for review. Reviewed on PC, PlayStation, Xbox.</p>
+      `,
     },
     {
       id: 3,
-      tag: "Interview",
-      title: "A conversation with a local photojournalist on access and trust",
-      excerpt: "On building relationships with sources before ever raising a camera.",
-      date: "Jun 14, 2026",
-      tint: "ph-3",
-      content:
-        "<p>Replace this paragraph with your real article text. Add the full interview transcript or narrative summary here.</p>",
-    },
-    {
-      id: 4,
-      tag: "Report",
-      title: "Tracking a season of change at the community sports league",
-      excerpt: "Six months following coaches and players through wins, losses, and everything after.",
-      date: "May 30, 2026",
-      tint: "ph-4",
-      content: "<p>Replace this paragraph with your real article text.</p>",
-    },
-    {
-      id: 5,
-      tag: "Opinion",
-      title: "Why local news still needs someone on the ground",
-      excerpt: "A case for slower, more deliberate reporting in a fast-news world.",
-      date: "May 09, 2026",
-      tint: "ph-5",
-      content: "<p>Replace this paragraph with your real article text.</p>",
+      tag: "Gaming",
+      title: "Return of the Ancients update overhauls Path of Exile 2's endgame with new Ascendancies",
+      dek: "Big changes starts here.",
+      date: "May 8, 2026",
+      byline: "By Ray Daniel Giron · Published on Fanstanza.gg",
+      image: "media/journalism/poe2-return-of-ancients/1.jpg",
+      credit: "Credits: Grinding Gear Games",
+      content: `
+        <p>The ancient remnants of Wraeclast hum with forgotten magik as the lost art of Ezomyte Runesmithing is brought back to the light. A power buried for millennia now awakens the restless dead, forcing exiles to harness the raw energy of Verisium to rewrite the rules of reality.</p>
+        <p>This massive Path of Exile 2: Return of the Ancients update introduces the Runes of Aldur League, two new Ascendancy classes, and five fully fleshed-out endgame storylines featuring dedicated progression hubs and Pinnacle bosses.</p>
+        <p>Here is everything you need to know about the massive additions coming to Wraeclast.</p>
+
+        <h3>Path of Exile 2: Return of the Ancients update release date and platforms</h3>
+        <p>Path of Exile 2: Return of the Ancients releases on Tuesday, May 29, 2026 on PC, Steam, PlayStation, Xbox, and the Epic Games Store.</p>
+        <p>New players may join at any time via an Early Access Supporter Pack.</p>
+
+        <h3>Path of Exile 2 New League: Runes of Aldur</h3>
+        <figure><img src="media/journalism/poe2-return-of-ancients/2.jpg" alt="Runes of Aldur league" loading="lazy"><figcaption>Credits: Grinding Gear Games</figcaption></figure>
+        <p>The Runes of Aldur league introduces players to Farrow, a young blacksmith who helps uncover the ancient Kalguuran origins of Ezomyte Runesmithing.</p>
+        <p>Throughout Wraeclast, players will discover Ezomyte Remnants that can be inscribed with symbols to craft powerful items.</p>
+        <p>This power comes with a high risk high reward system. Activating a Remnant reanimates nearby undead and empowers them based on the specific runes you used.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Runes</th><th>Effect</th><th>Reward</th></tr></thead>
+          <tbody>
+            <tr><td>Fire-aligned Runes</td><td>Grants enemies dangerous fire-based abilities</td><td>Can craft specific elemental outcomes or basic currency.</td></tr>
+            <tr><td>Moon-aligned Runes</td><td>Introduces celestial hazards such as falling lunar beams.</td><td>Can create socketable runes with specific properties.</td></tr>
+            <tr><td>Multiple/Complex Runes</td><td>Triggers additional waves of increasingly empowered enemies.</td><td>Enables the creation of much rarer items and meta-crafting outcomes.</td></tr>
+          </tbody>
+        </table></div>
+        <p>By collecting Verisium, players can unlock Runic Ward, a new defensive resource that acts as a secondary life pool and fuels flexible, class-agnostic Kalguuran magic abilities instead of using mana.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Skills</th><th>Effect</th></tr></thead>
+          <tbody>
+            <tr><td>Triskellion Cascade</td><td>Triggers your next spell multiple times in a Triskellion pattern.</td></tr>
+            <tr><td>Frostflame Nova</td><td>Transforms an existing ignite on enemies into Frostfire, building up freeze while burning them.</td></tr>
+            <tr><td>Mark of Repulsion</td><td>Creates a mark capable of pushing nearby enemies away.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Players also gain access to over 100 new crafting runes, including elemental conversion runes and Masterwork Runes that upgrade tiers.</p>
+
+        <h3>Path of Exile 2: New Ascendancy Classes</h3>
+        <p>Two new Ascendancy classes arrive to reshape combat, offering distinct playstyles for the Huntress and the Monk.</p>
+
+        <h3>The Spirit Walker</h3>
+        <figure><img src="media/journalism/poe2-return-of-ancients/3.jpg" alt="The Spirit Walker Ascendancy" loading="lazy"><figcaption>Credits: Grinding Gear Games</figcaption></figure>
+        <p>Deeply attuned to the untamed wilds of Wraeclast, the Spirit Walker channels the feral power of Azmerian animal spirits.</p>
+        <p>By communing with the Primal, Vivid, and Wild Wisps, this Ascendancy allows the Huntress to command the sacred forces of nature to obliterate her foes and even tame the most ferocious beast bosses to fight by her side.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Ability</th><th>Effect</th></tr></thead>
+          <tbody>
+            <tr><td>The Stag</td><td>Summons Stampedes when you attack.</td></tr>
+            <tr><td>The Owl</td><td>Grants "Boons" in the form of feathers, adding extra projectiles and enhanced projectile speed to your next skill.</td></tr>
+            <tr><td>The Bear</td><td>Summons a giant bear companion to your side that mauls, slams, leaps, and intimidatingly roars to debuff enemies.</td></tr>
+            <tr><td>Sacred Wisps</td><td>A hidden power unlocked by using all three wisps. It enhances all animal companions (e.g., the Bear takes some of the damage you take and grants life regen, Stags become more aggressive, and Owl skills leave a trail of "Soaring ground").</td></tr>
+            <tr><td>Idolatry</td><td>Grants large bonuses for using Idol socketables in your equipment.</td></tr>
+            <tr><td>Tame Beast</td><td>Allows the Spirit Walker to tame Beast Bosses (such as Mighty Silverfist, Chimeral Beast, or Rakkar, the Frozen Talon) to open up unique build options.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>The Martial Artist</h3>
+        <figure><img src="media/journalism/poe2-return-of-ancients/4.jpg" alt="The Martial Artist Ascendancy" loading="lazy"><figcaption>Credits: Grinding Gear Games</figcaption></figure>
+        <p>Hardened by decades of rigorous training, the Martial Artist is a master of the seven Hollow techniques and the flow of internal Spiritual Energy.</p>
+        <p>This Ascendancy transforms the Monk into an unbreakable living weapon, utilizing spectral illusions, devastating resonance, and ancient runic tattoos to shatter the darkness with his bare hands.</p>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Ability</th><th>Effect</th></tr></thead>
+          <tbody>
+            <tr><td>Hollow Form Technique</td><td>Creates illusions of the Martial Artist that replicate a skill of your choosing, perfect for clearing packs with AoE skills.</td></tr>
+            <tr><td>Hollow Focus Technique</td><td>Manifests Spiritual Energy into Bells around the player. These bells can be shattered by attacks (including from illusions) to deal damage.</td></tr>
+            <tr><td>Hollow Resonance Technique</td><td>Adds a manifested Bell to your back that rings each time you deal a Critical Strike, damaging all enemies around you.</td></tr>
+            <tr><td>Way of the Mountain</td><td>Covers you in stone when you immobilize enemies, mitigating large amounts of damage and hardening your weapon to deal more damage.</td></tr>
+            <tr><td>Meridian Tattoos</td><td>Allows you to socket runes directly into your body via your inventory. Sockets act as virtual armor pieces (one helmet, two body armor, one gloves, one boots).</td></tr>
+            <tr><td>Way of the Stonefist</td><td>Causes your equipped gloves to become a new "Fists of Stone" base type. Every modifier on the original gloves is transformed into an equivalent, drastically more powerful modifier (e.g., massive damage, max resistances, increased life gain on hit).</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>Path of Exile 2 Endgame Overhaul: The Fortress and Atlas Masters</h3>
+        <p>The Atlas of Worlds has been heavily revamped. The endgame now features fixed points of interest at specific locations, giving players clear objectives to discover.</p>
+        <p>The centerpiece is the sprawling Precursor Fortress. Plunging into its depths reveals unique mechanics, ranging from relentless Azmeri spirit pursuits and essence crystals to entire zones transformed into gauntlets of strongboxes.</p>
+        <figure><img src="media/journalism/poe2-return-of-ancients/5.jpg" alt="The Precursor Fortress" loading="lazy"><figcaption>Credits: Grinding Gear Games</figcaption></figure>
+        <p>At the center of the Fortress lies an incredible challenge against the new core Pinnacle boss.</p>
+        <p>The Atlas Passive Tree has been significantly upgraded and can now be fully allocated by gaining points from every single area completed in the Fortress. Additionally, the new Masters of the Atlas system introduces an Ascendancy class for your Atlas Tree.</p>
+        <p>Players can complete missions for Atlas Masters like Jado (Order of the Djinn) or Hilda (Monster Hunter) to gain special bonuses that can be quickly swapped between depending on what build you are running.</p>
+
+        <h3>Return of the Ancients update reshapes endgame storylines</h3>
+        <p>All four Early Access leagues have been massively expanded with fixed Atlas locations, new storylines, dedicated crafting systems, and Pinnacle bosses.</p>
+        <figure><img src="media/journalism/poe2-return-of-ancients/6.jpg" alt="Endgame storylines" loading="lazy"><figcaption>Credits: Grinding Gear Games</figcaption></figure>
+        <div class="table-wrap"><table>
+          <thead><tr><th>League</th><th>Storyline</th><th>New mechanics &amp; rewards</th></tr></thead>
+          <tbody>
+            <tr><td>Delirium</td><td>The Hare and the Raven.</td><td>Features a visible fog depth bar and mirror shards. Special encounters drop Liquid Emotions to craft specific mods onto Jewels. Culminates in a simulacrum and a fight with Tangmazu.</td></tr>
+            <tr><td>Breach</td><td>Join the Keepers of the Flame at their monastery.</td><td>Breaches have visible timers showing how kills extend duration. Enemies drop Hiveblood and Wombgifts to feed the Genesis Tree, offering highly customizable jewelry and belt crafting.</td></tr>
+            <tr><td>Ritual</td><td>Free Aoife's spirit from the King in the Mists.</td><td>Ritual rewards are now entirely Uniques or Omens. The "Rite of the Nameless" requires a multi-map ritual where monsters stack map-to-map, culminating in a 5-map challenge.</td></tr>
+            <tr><td>Expedition</td><td>Launch an expedition into the ocean to find Gwennen.</td><td>Use logbooks to send ships and explore a vast ocean with new islands, secrets, and vault bosses like Medved and Uhtred, the Stardrinker.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>New unique items in Return of the Ancients update</h3>
+        <figure><img src="media/journalism/poe2-return-of-ancients/7.jpg" alt="New unique items" loading="lazy"><figcaption>Credit: Grinding Gear Games</figcaption></figure>
+        <div class="table-wrap"><table>
+          <thead><tr><th>Unique item</th><th>Type</th><th>Effect</th></tr></thead>
+          <tbody>
+            <tr><td>Twisted Empyrean</td><td>Two-Handed Mace</td><td>Converts all mace fire damage to cold (turning Volcanic Fissures into Glacial). Grants the Starborn Onslaught skill, a backward leap that throws the mace to create Verisium fissures and a storm of cold bolts.</td></tr>
+            <tr><td>Eventide Petals</td><td>Amulet</td><td>Grants Runic Ward. Grants the Midnight Zenith reservation skill, causing critical hits to generate Arctic Petals that form into an explosive floral Ice Crystal.</td></tr>
+            <tr><td>The Raven's Flock</td><td>Staff</td><td>Causes minions to inflict "Gruelling madness" on hit, slowing enemies. Grants Spiraling Conspiracy, summoning a flock of ravens that deals damage over time and grows larger. Also grants the Mad Flight minion command skill.</td></tr>
+            <tr><td>Horror's Flight</td><td>Gloves</td><td>Causes enemies to become terrified of you and grants stacks of "Fear Incarnate" when culling enemies. Grants the Crushing Fear skill, a chaos-damage palm strike that scales heavily based on the power of the enemy.</td></tr>
+            <tr><td>Sylvan's Effigy</td><td>Sceptre</td><td>Allows you to have any number of companions of different types. Summons a persistent Azmerian Wolf companion that maims, bleeds, and buffs allies. Grants the Eternal Hunt command skill.</td></tr>
+            <tr><td>Liminal Coil</td><td>Wand</td><td>Allows you to apply as many curses as you please, but the curses have no effect. Instead, spells gain Physical and Chaos damage for each curse on the enemy. Grants Coiling Bolts, a spell that splits and chains through every cursed enemy.</td></tr>
+            <tr><td>Periphery</td><td>Bow</td><td>Deals damage of all Elements, and all elements cause all Ailments. Grants the Azmerian Swarms skill, summoning pursuing wisps on kill that damage enemies and apply a debuff boosting elemental damage.</td></tr>
+            <tr><td>The Ordained</td><td>Spear</td><td>Specializes in Physical and Lightning Damage with high Critical Strike chance. Allows life leech from Lightning damage. Grants Righteous Descent, an epic divine leap that becomes massively empowered near a "Fragment of Divinity".</td></tr>
+            <tr><td>Voices</td><td>Jewel</td><td>Consumes one jewel slot to add more (versions exist for 2, 3, or 4 added jewel slots).</td></tr>
+            <tr><td>Serle's Grit</td><td>Weapon</td><td>A new unique weapon that, when Runeforged, can gain one of several different powerful outcomes.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h3>Quality of Life improvements</h3>
+        <ul>
+          <li><strong>Challenge System:</strong> Challenges debut in Path of Exile 2. Completing challenges rewards pieces of the Knight of Aldur armour set, with progress visible to other players in chat and via a statue in your hideout.</li>
+          <li><strong>Build Guide System:</strong> Community creators can now create .build files. When downloaded, these builds appear directly in the game client, showing passive allocations, Ascendancy points, Skill Gems, and item recommendations with custom notes.</li>
+          <li><strong>Trade Market Improvements:</strong> Shift-Alt clicking an item will now search for it on the trade market, showing current prices with the ability to toggle specific mods.</li>
+          <li><strong>Campaign Navigation:</strong> New navigational landmarks, blood trails, and explorer NPCs that reveal minimap paths have been added to streamline the campaign experience.</li>
+        </ul>
+
+        <h3>Road to 1.0 and Beyond</h3>
+        <p>The Return of the Ancients update is Path of Exile 2's final major expansion before its 1.0 release.</p>
+        <p>Grinding Gear Games will shift its development focus toward polish and balance improvements, accompanied by event leagues. The official launch is scheduled for late 2026, following ExileCon's global broadcasts.</p>
+      `,
     },
   ];
 
@@ -289,7 +447,7 @@ function initJournalism() {
       <div class="featured-meta">
         <span class="tag">${a.tag}</span>
         <h2>${a.title}</h2>
-        <p>${a.excerpt}</p>
+        ${a.dek ? `<p class="dek">${a.dek}</p>` : ""}
         <span class="date">${a.date}</span>
       </div>
     `;
@@ -341,6 +499,7 @@ function initJournalism() {
       <div class="article-content">
         <span class="tag">${a.tag}</span>
         <h2>${a.title}</h2>
+        ${a.dek ? `<p class="article-dek">${a.dek}</p>` : ""}
         ${a.byline ? `<span class="byline">${a.byline}</span>` : ""}
         <span class="date">${a.date}</span>
         ${a.content}
