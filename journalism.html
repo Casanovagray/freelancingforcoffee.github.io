@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancing for coffee — Journalism</title>
+<meta name="description" content="Journalism portfolio — featured story and article archive.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ambient-glow"></div>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="r1" cx="16" cy="18" r="11" stroke-width="2"/>
+        <circle class="r2" cx="24" cy="22" r="9" stroke-width="2"/>
+      </svg>
+      Freelancing for <span class="dim">coffee</span>
+    </a>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span class="bars"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</nav>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<aside class="drawer" data-drawer>
+  <ul class="drawer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="journalism.html">Journalism</a></li>
+    <li><a href="editing.html">Editing</a></li>
+    <li><a href="price.html">Price</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="drawer-foot">Freelancing for coffee<br>Based on caffeine &amp; deadlines.</div>
+</aside>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Bylines &amp; reporting</span>
+      <h1>Journalism</h1>
+      <p><!-- EDIT ME --> Browse the featured story with the arrows, or pick anything from the list. Click any story to read it.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <!--
+      EDIT ME: all article data lives in js/script.js inside initJournalism().
+      Edit the `articles` array there — title, excerpt, full content, tag, date.
+      This markup just renders whatever is in that array.
+    -->
+    <div class="journalism-layout">
+      <div class="featured-card" data-featured></div>
+      <div class="sidebar-list" data-article-list></div>
+    </div>
+  </section>
+</main>
+
+<!-- Article modal -->
+<div class="modal-overlay article-modal" data-article-modal>
+  <button class="modal-close" aria-label="Close">&#10005;</button>
+  <div class="modal-body" data-article-body></div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-brand">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="18" r="11" stroke="var(--purple)" stroke-width="2"/>
+        <circle cx="24" cy="22" r="9" stroke="var(--cyan)" stroke-width="2"/>
+      </svg>
+      Freelancing for coffee
+    </div>
+    <p>&copy; 2026 Freelancing for coffee. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

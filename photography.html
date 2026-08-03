@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancing for coffee — Photography</title>
+<meta name="description" content="Photography portfolio — click an album to open the carousel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ambient-glow"></div>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="r1" cx="16" cy="18" r="11" stroke-width="2"/>
+        <circle class="r2" cx="24" cy="22" r="9" stroke-width="2"/>
+      </svg>
+      Freelancing for <span class="dim">coffee</span>
+    </a>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span class="bars"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</nav>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<aside class="drawer" data-drawer>
+  <ul class="drawer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="journalism.html">Journalism</a></li>
+    <li><a href="editing.html">Editing</a></li>
+    <li><a href="price.html">Price</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="drawer-foot">Freelancing for coffee<br>Based on caffeine &amp; deadlines.</div>
+</aside>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Selected work</span>
+      <h1>Photography</h1>
+      <p><!-- EDIT ME --> A set of albums organised by category. Click any thumbnail to open the carousel for that album.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <!--
+      EDIT ME: each .album-card is one album/category.
+      - data-album: the name shown in the carousel
+      - data-count: how many placeholder slides to generate in the carousel
+      - ph-1..ph-6 classes on the .ph div: swap colour placeholders / change to real <img> later
+      To add a real photo grid instead of the carousel, replace the .ph divs with <img> tags
+      and update js/script.js's openAlbum() to read real image URLs from a data attribute.
+    -->
+    <div class="photo-grid">
+      <article class="album-card" data-album="Street" data-count="8">
+        <div class="ph ph-1"><div class="tint"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+        </div>
+        <div class="info"><h3>Street</h3><span>8 photos</span></div>
+      </article>
+
+      <article class="album-card" data-album="Portraits" data-count="6">
+        <div class="ph ph-2"><div class="tint"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+        </div>
+        <div class="info"><h3>Portraits</h3><span>6 photos</span></div>
+      </article>
+
+      <article class="album-card" data-album="Landscape" data-count="10">
+        <div class="ph ph-3"><div class="tint"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+        </div>
+        <div class="info"><h3>Landscape</h3><span>10 photos</span></div>
+      </article>
+
+      <article class="album-card" data-album="Events" data-count="7">
+        <div class="ph ph-4"><div class="tint"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+        </div>
+        <div class="info"><h3>Events</h3><span>7 photos</span></div>
+      </article>
+
+      <article class="album-card" data-album="Product" data-count="5">
+        <div class="ph ph-5"><div class="tint"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+        </div>
+        <div class="info"><h3>Product</h3><span>5 photos</span></div>
+      </article>
+
+      <article class="album-card" data-album="Black &amp; White" data-count="6">
+        <div class="ph ph-6"><div class="tint"></div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg>
+        </div>
+        <div class="info"><h3>Black &amp; White</h3><span>6 photos</span></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- Carousel modal -->
+<div class="modal-overlay" data-carousel-overlay>
+  <button class="modal-close" aria-label="Close">&#10005;</button>
+  <div class="carousel">
+    <div class="carousel-title">
+      <h3 data-carousel-title>Album</h3>
+      <span data-carousel-count>1 / 1</span>
+    </div>
+    <div class="carousel-stage">
+      <div class="carousel-track" data-carousel-track></div>
+      <button class="carousel-arrow prev" aria-label="Previous photo">&#8592;</button>
+      <button class="carousel-arrow next" aria-label="Next photo">&#8594;</button>
+    </div>
+    <div class="carousel-dots" data-carousel-dots></div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-brand">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="18" r="11" stroke="var(--purple)" stroke-width="2"/>
+        <circle cx="24" cy="22" r="9" stroke="var(--cyan)" stroke-width="2"/>
+      </svg>
+      Freelancing for coffee
+    </div>
+    <p>&copy; 2026 Freelancing for coffee. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

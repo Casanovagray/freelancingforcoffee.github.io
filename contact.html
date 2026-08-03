@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancing for coffee — Contact</title>
+<meta name="description" content="Get in touch for photography, journalism and editing work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="ambient-glow"></div>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle class="r1" cx="16" cy="18" r="11" stroke-width="2"/>
+        <circle class="r2" cx="24" cy="22" r="9" stroke-width="2"/>
+      </svg>
+      Freelancing for <span class="dim">coffee</span>
+    </a>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span class="bars"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</nav>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<aside class="drawer" data-drawer>
+  <ul class="drawer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="journalism.html">Journalism</a></li>
+    <li><a href="editing.html">Editing</a></li>
+    <li><a href="price.html">Price</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="drawer-foot">Freelancing for coffee<br>Based on caffeine &amp; deadlines.</div>
+</aside>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Say hello</span>
+      <h1>Contact</h1>
+      <p><!-- EDIT ME --> Have a project in mind? Fill out the form or reach out directly.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="contact-layout">
+      <div class="contact-info">
+        <div class="info-row">
+          <span class="eyebrow">Email</span>
+          <a href="mailto:hello@freelancingforcoffee.com">hello@freelancingforcoffee.com</a>
+        </div>
+        <div class="info-row">
+          <span class="eyebrow">Based in</span>
+          <span class="val"><!-- EDIT ME --> Your city, your country</span>
+        </div>
+        <div class="info-row">
+          <span class="eyebrow">Availability</span>
+          <span class="val"><!-- EDIT ME --> Booking projects from next month</span>
+        </div>
+        <div class="socials">
+          <!-- EDIT ME: swap # for your real profile links -->
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Twitter / X">X</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+
+      <!--
+        EDIT ME: GitHub Pages can't run server code, so this form needs a form backend
+        to actually send email — e.g. Formspree, Getform, or Netlify Forms.
+        Sign up, then replace the action URL below with the one they give you.
+      -->
+      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="subject">What do you need?</label>
+          <select id="subject" name="subject">
+            <option>Photography</option>
+            <option>Journalism</option>
+            <option>Editing</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-brand">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="16" cy="18" r="11" stroke="var(--purple)" stroke-width="2"/>
+        <circle cx="24" cy="22" r="9" stroke="var(--cyan)" stroke-width="2"/>
+      </svg>
+      Freelancing for coffee
+    </div>
+    <p>&copy; 2026 Freelancing for coffee. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
