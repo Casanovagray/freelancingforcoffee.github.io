@@ -2,6 +2,13 @@
    Freelancing for coffee — shared behaviour
    ========================================================= */
 
+/* CMS layer (auth button + dynamic content). Loaded as an ES module; if it fails
+   (offline CDN, backend not configured) the static site keeps working. */
+window.CMSReady = import("./cms-boot.js").catch((e) => {
+  console.warn("CMS layer unavailable:", e);
+  return null;
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   initNavDrawer();
   setActiveLink();
@@ -13,6 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /* ---------------- Entrance animations ---------------- */
 function initStaggerAnimations() {
+  /* Once an entrance animation finishes, drop its class so fill-mode: forwards stops
+     overriding later transforms/opacity (card hover lift, filter fade-out). */
+  document.addEventListener("animationend", (e) => {
+    if (e.target.matches?.(".anim-fade-up, .anim-fade-left, .anim-fade-in")) {
+      e.target.classList.remove("anim-fade-up", "anim-fade-left", "anim-fade-in");
+    }
+  });
   /* Sets --i on each staggered group so CSS's animation-delay: calc(var(--i) * 90ms)
      fans the entrance animation out across the items, regardless of how many there are. */
   document.querySelectorAll(".photo-grid").forEach((grid) => {
@@ -91,9 +105,8 @@ function setActiveLink() {
 
 /* ---------------- Photography: album carousel ---------------- */
 function initPhotographyCarousel() {
-  const cards = document.querySelectorAll("[data-album]");
   const overlay = document.querySelector("[data-carousel-overlay]");
-  if (!cards.length || !overlay) return;
+  if (!overlay) return;
 
   const track = overlay.querySelector("[data-carousel-track]");
   const dotsWrap = overlay.querySelector("[data-carousel-dots]");
@@ -166,7 +179,16 @@ function initPhotographyCarousel() {
     document.body.style.overflow = "";
   }
 
-  cards.forEach((card) => card.addEventListener("click", () => openAlbum(card)));
+  document.addEventListener("click", (e) => {
+    const card = e.target.closest("[data-album]");
+    if (card) openAlbum(card);
+  });
+  document.addEventListener("keydown", (e) => {
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches?.("[data-album]")) {
+      e.preventDefault();
+      openAlbum(e.target);
+    }
+  });
   prevBtn.addEventListener("click", () => goTo(index - 1));
   nextBtn.addEventListener("click", () => goTo(index + 1));
   closeBtn.addEventListener("click", closeModal);
@@ -516,14 +538,14 @@ function initJournalism() {
         )
         .join("");
     sidebarEl.querySelectorAll(".article-row").forEach((row) => {
-      row.addEventListener("click", () => openArticle(parseInt(row.dataset.id, 10)));
+      row.addEventListener("click", () => openArticle(row.dataset.id));
     });
   }
 
   const articleModal = document.querySelector("[data-article-modal]");
   function openArticle(id) {
     if (!articleModal) return;
-    const a = articles.find((x) => x.id === id);
+    const a = articles.find((x) => String(x.id) === String(id));
     if (!a) return;
     articleModal.querySelector("[data-article-body]").innerHTML = `
       <div class="article-hero">
@@ -564,4 +586,17 @@ function initJournalism() {
 
   renderFeatured();
   renderSidebar();
+
+  /* CMS articles: a highlighted one takes the featured slot; otherwise they follow the static ones. */
+  window.CMSReady
+    .then((cms) => (cms ? cms.journalismArticles() : []))
+    .then((remote) => {
+      if (!remote.length) return;
+      if (remote.some((r) => r.featured)) articles.unshift(...remote);
+      else articles.push(...remote);
+      featuredIndex = 0;
+      renderFeatured();
+      renderSidebar();
+    })
+    .catch((e) => console.warn("CMS articles unavailable:", e));
 }

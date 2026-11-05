@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Freelancing for coffee</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css">
+</head>
+<body class="page-admin">
+<div class="ambient-glow"></div>
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img class="brand-mark" src="media/logo.png" alt="Freelancing for coffee logo">
+      Freelancing for Coffee
+    </a>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span class="bars"><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</nav>
+<div class="drawer-overlay" data-drawer-overlay></div>
+<aside class="drawer" data-drawer>
+  <ul class="drawer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="photography.html">Photography</a></li>
+    <li><a href="journalism.html">Journalism</a></li>
+    <li><a href="editing.html">Editing</a></li>
+    <li><a href="price.html">Price</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="drawer-foot">Freelancing for coffee<br>Based on caffeine &amp; deadlines.</div>
+</aside>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Admin</span>
+      <h1>Content manager</h1>
+      <p>Create and edit photography albums, articles and video edits.</p>
+    </div>
+  </section>
+  <section class="container cms-wrap">
+    <div id="cms"><p class="cms-note">Checking session…</p></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-brand">
+      <img src="media/logo.png" alt="Freelancing for coffee logo">
+      Freelancing for coffee
+    </div>
+    <p>&copy; 2026 Freelancing for coffee. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.min.js"></script>
+<script src="js/script.js"></script>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
